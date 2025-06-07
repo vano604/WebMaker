@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/jpg" href="../image/Logo.jpg">
+    <title>WebMaker</title>
+</head>
+<body>
+
+<header>
+    <div><img class="header-logo" height="100px" src="../image/Logo.jpg" alt="Logo"></div>
+    <nav id="navbar" class="nav">
+        <div class="nav-links"><a href="../index.html">Acasă</a></div>
+        <div class="nav-links"><a href="mod.html"  class="active">Modul de lucru</a></div>
+        <div class="nav-links"><a href="produse.html">Produsele</a></div>
+        <div class="nav-links"><a href="portofolio.html">Portofolio</a></div>
+        <div class="nav-links"><a href="contacte.html">Contacte</a></div>
+    </nav>
+
+    <a class="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
+
+</header>
+
+<main>
+    <h2 class="centered">Despre mine...</h2>
+    <hr>
+    <p>
+        Sunt un programator începător, învăț multe prin proiectele pe cere le fac pentru oameni. Lucrez cu ajutorul aplicației <b><i>Visual Studio Code</i></b> și limbajele de programare <b><i>HTML, CSS</i></b> și<b><i> Java Script</i></b>.
+        Îmi place să creez site-uri web și să învăț ceva nou din fiecare proiect. Vreau să devin mai bun și să învăț și alte tehnologii în viitor. Sunt deschis la idei și proiecte noi.
+    </p>
+    <h3 class="centered">!!!Atenție!!!</h3>
+    <p class="centered">
+        Hostingul site-urilor pe care le creez se efectuează în <b><i>GitHub</i>.
+    </p>
+
+    <div class="centered"><a href="https://github.com/vano604" target="_blank"><button class="button2 centered">Vezi profilul...</button></a></div>
+
+    <div class="container-limbaje">
+        <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">
+            <img class="img-limbaj" src="../image/Visual_Studio_Code.png" alt="Visual_Studio_Code">
+        </a>
+        
+        <a href="https://ro.wikipedia.org/wiki/HyperText_Markup_Language" target="_blank">
+            <img class="img-limbaj" src="../image/html.png" alt="HTML">
+        </a>
+        
+        <a href="https://ro.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+            <img class="img-limbaj" src="../image/css.png" alt="CSS">
+        </a>
+        
+        <a href="https://ro.wikipedia.org/wiki/JavaScript" target="_blank">
+            <img class="img-limbaj" src="../image/js.png" alt="Java Script">
+        </a>
+
+        <a href="https://ro.wikipedia.org/wiki/GitHub" target="_blank">
+            <img class="img-limbaj" src="../image/GitHub_Logo.png" alt="GitHub">
+        </a>
+        </div>
+
+        <hr>
+
+        <h2 class="centered">WebMaker...</h2>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="img-info">
+                <figure>
+                    <img height="100px" src="../image/preț.png" alt="Preț">
+                    <figcaption><p>Prețuri plăcute.</p></figcaption>
+                </figure>
+                <figure>
+                    <img height="100px" src="../image/card_ban.jpg" alt="Card/Bancnotă">
+                    <figcaption><p>Orice achitare.</p></figcaption>
+                </figure>
+            </div>
+
+            </div>
+            
+            <div class="col-8">
+                <h2>Informații..</h2>
+                <hr>
+                <div>
+                    <h2 class="info">Achitarea </h2>
+                    <p class="info p-achitare">
+                        este efectuată prin două moduri și anume prin: Card bancal sau Bancnotă reală.
+                    </p>
+
+                    <div class="slideshow-container">
+
+                        <div class="slide">
+                            <img src="../image/MaibBank.png" alt="MaibBank">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../image/VisaBank.png" alt="VisaBank">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../image/GooglePay.png" alt="GooglePay">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../image/MasterCard.png" alt="MasterCard">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div>
+                    <h2 class="info">Prețurile </h2>
+                    <p class="info">
+                        sunt bune și eficiente.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h2 class="info">Transferul: </h2>
+                    <p class="info">
+                        oamenilor din satele din raionul soroca sau din singur oraș este gratuit, iar de mai departe <b>10 lei</b>.
+                    </p>
+                </div>
+
+                <br>
+
+            </div>
+        </div>
+
+</main>
+
+<footer>
+    <div><img class="footer-logo" height="100px" src="../image/Logo.jpg" alt="Logo"></div>
+    <div class="centered footer-info">
+        <span>Drepturile sunt apărate. &copy;</span>
+        <span id="an"> </span>
+    </div>
+</footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+</html>
