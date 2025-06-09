@@ -58,6 +58,11 @@ hr {
     padding-left: 10px;
 }
 
+a.hamburger-menu {
+    background-color: blue !important;
+    color: #fff !important;
+}
+
 header a {
     float: left;
     color: #fff;
@@ -66,6 +71,7 @@ header a {
     padding: 17px 10px;
     margin-top: 55px;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 header a.active,
@@ -302,7 +308,7 @@ button.vizit-button {
     }
 
     .Qr1 {
-        height: 90px;
+        height: 70px;
     }
 
     .img-info {

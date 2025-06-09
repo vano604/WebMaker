@@ -32,33 +32,26 @@
             <div class="form">
                 <h2 class="centered">Contactează-mă:</h2>
                     <hr>
-                <form name="submit-to-google-sheet">
-                    <label for="nume">Numele: </label> <br>
-                    <input class="input-box" type="text" name="nume" id="nume" required placeholder="Ivan" minlength="2" maxlength="20"> <br>
-
-                    <label for="prenume">Prenumele: </label> <br>
-                    <input class="input-box" type="text" name="prenume" id="prenume" required placeholder="Ivanov" minlength="2" maxlength="20"> <br>
-
-                    <label for="email">E-mail: </label> <br>
-                    <input class="input-box" type="email" name="email" id="email" required placeholder="exemplu@gmail.com" minlength="10" maxlength="30"> <br>
-
-                    <label for="number">Numărul de telefon: </label> <br>
-                    <input class="input-box" type="text" name="number" id="number" required placeholder="+373 XX XXX XX X" minlength="10" maxlength="15"> <br>
-
-                    <label for="mesaj">Mesajul: </label> <br>
-                    <input class="input-box2" type="text" name="mesaj" id="mesaj" required placeholder="Text" minlength="10" maxlength="100"> <br>
-
-                    <label for="motiv">Motivul: </label> <br>
-                    <select class="input-sel" name="motiv" id="motiv" required>
-                        <option> </option>
-                        <option>Vreau un site</option>
-                        <option>Vreau să învăț programarea</option>
-
-                    </select> <br> <br>
-
-                    <input class="input-submit" type="submit" value="Transmite"> <br>
-
-                </form>
+                    <form name="submit-to-google-sheet">
+                        <label for="nume">Numele: </label> <br>
+                        <input class="input-box" type="text" name="name" id="name" required placeholder="Ivan" minlength="2" maxlength="20"> <br>
+                    
+                        <label for="prenume">Prenumele: </label> <br>
+                        <input class="input-box" type="text" name="prename" id="prename" required placeholder="Ivanov" minlength="2" maxlength="20"> <br>
+                    
+                        <label for="email">E-mail: </label> <br>
+                        <input class="input-box" type="email" name="email" id="email" required placeholder="exemplu@gmail.com" minlength="10" maxlength="30"> <br>
+                    
+                        <label for="number">Numărul de telefon: </label> <br>
+                        <input class="input-box" type="text" name="number" id="number" required placeholder="+373 XX XXX XX X" minlength="10" maxlength="15"> <br>
+                    
+                        <label for="mesaj">Mesajul: </label> <br>
+                        <input class="input-box2" type="text" name="messaje" id="messaje" required placeholder="Text" minlength="10" maxlength="100"> <br> <br>
+                    
+                        <input class="input-submit" type="submit" value="Transmite"> <br>
+                    
+                    </form>
+                      
             </div>
         </div>
 
@@ -102,6 +95,30 @@
         <span id="an"> </span>
     </div>
 </footer>
+
+<script>
+    const form = document.getElementById('contactForm');
+  
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      const formData = new FormData(form);
+  
+      fetch("https://script.google.com/macros/s/AKfycbxCI0MDgUfCmTfejP6JdfNJ56CxY2qx2GKm0pBwTFW22sl6Tnr72ge6WOXVeSrJ6e8P/exec", {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+        alert('Datele sunt trimise: ' + result);
+        form.reset(); // очищаем форму после отправки
+      })
+      .catch(error => {
+        alert('Eroare: ' + error.message);
+      });
+    });
+  </script>
+  
 
     <script src="../js/script.js"></script>
 </body>
