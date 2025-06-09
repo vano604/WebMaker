@@ -32,18 +32,21 @@
             <div class="form">
                 <h2 class="centered">Contactează-mă:</h2>
                     <hr>
-                <form>
+                <form name="submit-to-google-sheet">
                     <label for="nume">Numele: </label> <br>
-                    <input class="input-box" type="text" name="nume" id="nume" required> <br>
+                    <input class="input-box" type="text" name="nume" id="nume" required placeholder="Ivan" minlength="2" maxlength="20"> <br>
 
                     <label for="prenume">Prenumele: </label> <br>
-                    <input class="input-box" type="text" name="prenume" id="prenume" required> <br>
+                    <input class="input-box" type="text" name="prenume" id="prenume" required placeholder="Ivanov" minlength="2" maxlength="20"> <br>
 
                     <label for="email">E-mail: </label> <br>
-                    <input class="input-box" type="email" name="email" id="email" required> <br>
+                    <input class="input-box" type="email" name="email" id="email" required placeholder="exemplu@gmail.com" minlength="10" maxlength="30"> <br>
 
                     <label for="number">Numărul de telefon: </label> <br>
-                    <input class="input-box" type="text" name="number" id="number" required> <br>
+                    <input class="input-box" type="text" name="number" id="number" required placeholder="+373 XX XXX XX X" minlength="10" maxlength="15"> <br>
+
+                    <label for="mesaj">Mesajul: </label> <br>
+                    <input class="input-box2" type="text" name="mesaj" id="mesaj" required placeholder="Text" minlength="10" maxlength="100"> <br>
 
                     <label for="motiv">Motivul: </label> <br>
                     <select class="input-sel" name="motiv" id="motiv" required>
