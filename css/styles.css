@@ -307,8 +307,19 @@ button.vizit-button {
         width: 100%;
     }
 
-    .Qr1 {
+    .footer-info {
+        font-size: 20px;
+    }
+
+    img.Qr1 {
         height: 70px;
+        float: left;
+        display: block;
+    }
+
+    .vizit-button {
+        display: block; 
+        text-decoration: none;
     }
 
     .img-info {
