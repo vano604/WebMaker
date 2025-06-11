@@ -32,12 +32,12 @@
             <div class="form">
                 <h2 class="centered">Contactează-mă:</h2>
                     <hr>
-                    <form name="submit-to-google-sheet">
+                    <form id="contactForm">
                         <label for="nume">Numele: </label> <br>
-                        <input class="input-box" type="text" name="name" id="name" required placeholder="Ivan" minlength="2" maxlength="20"> <br>
+                        <input class="input-box" type="text" name="name" id="name" required placeholder="Ivanov" minlength="2" maxlength="20"> <br>
                     
                         <label for="prenume">Prenumele: </label> <br>
-                        <input class="input-box" type="text" name="prename" id="prename" required placeholder="Ivanov" minlength="2" maxlength="20"> <br>
+                        <input class="input-box" type="text" name="prename" id="prename" required placeholder="Ivan" minlength="2" maxlength="20"> <br>
                     
                         <label for="email">E-mail: </label> <br>
                         <input class="input-box" type="email" name="email" id="email" required placeholder="exemplu@gmail.com" minlength="10" maxlength="30"> <br>
@@ -46,7 +46,7 @@
                         <input class="input-box" type="text" name="number" id="number" required placeholder="+373 XX XXX XX X" minlength="10" maxlength="15"> <br>
                     
                         <label for="mesaj">Mesajul: </label> <br>
-                        <input class="input-box2" type="text" name="messaje" id="messaje" required placeholder="Text" minlength="10" maxlength="100"> <br> <br>
+                        <input class="input-box2" type="text" name="message" id="message" required placeholder="Text" minlength="10" maxlength="100"> <br> <br>
                     
                         <input class="input-submit" type="submit" value="Transmite"> <br>
                     
@@ -104,7 +104,7 @@
   
       const formData = new FormData(form);
   
-      fetch("https://script.google.com/macros/s/AKfycbxCI0MDgUfCmTfejP6JdfNJ56CxY2qx2GKm0pBwTFW22sl6Tnr72ge6WOXVeSrJ6e8P/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbwhVI7mJmfzUWqaSShxefr76u7vAPRTxbUo-n_a6tSJjOgLI4gRXg_40u6CmEQKZIZY/exec", {
         method: 'POST',
         body: formData
       })
