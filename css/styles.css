@@ -302,6 +302,21 @@ button.vizit-button {
     float: right;
 }
 
+.discord {
+    height: 70px;
+    transition: all linear 0.5s;
+}
+
+.discord:hover {
+    height: 70px;
+    transform: scale(1.1);
+    transition: all linear 0.5s;
+}
+
+.discordd {
+    margin-left: 30px;
+    margin-top: -25px;
+}
 
 @media (max-width: 1040px) {
 
