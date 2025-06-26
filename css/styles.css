@@ -70,7 +70,7 @@ header a {
     font-size: 25px;
     padding: 17px 10px;
     margin-top: 55px;
-    margin-left: 50px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -293,6 +293,7 @@ button.vizit-button {
     margin-top: 50px;
     margin-bottom: 0;
     color: blue;
+    text-decoration: none !important;
 }
 
 .Qr1 {
@@ -300,6 +301,7 @@ button.vizit-button {
     height: 150px;
     float: right;
 }
+
 
 @media (max-width: 1040px) {
 
@@ -317,9 +319,8 @@ button.vizit-button {
         display: block;
     }
 
-    .vizit-button {
+    button.vizit-button {
         display: block; 
-        text-decoration: none;
     }
 
     .img-info {
@@ -355,7 +356,7 @@ button.vizit-button {
         background-color: blue;
         border: 3px solid #000;
         position: absolute;
-        right: -6px;
+        right: 0px;
         top: 130px;
     }
 
